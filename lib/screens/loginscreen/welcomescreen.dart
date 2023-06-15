@@ -1,7 +1,6 @@
 import 'package:ecommerce_app/screens/loginscreen/loginscreen.dart';
 import 'package:ecommerce_app/screens/loginscreen/signup.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:google_fonts/google_fonts.dart';
 

@@ -8,7 +8,7 @@ class ShoesList extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.count(
       crossAxisCount: 2,
-      children: List.generate(10, (index) => CustomListTile()),
+      children: List.generate(10, (index) => const CustomListTile()),
     );
   }
 }

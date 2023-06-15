@@ -13,7 +13,7 @@ class Maincontroller extends GetxController {
   void animatetopage(int page) {
     currentpage.value = page;
     pageController.animateToPage(page,
-        duration: Duration(milliseconds: 300), curve: Curves.ease);
+        duration: const Duration(milliseconds: 300), curve: Curves.ease);
   }
 
   @override

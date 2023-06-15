@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/api/functions/createuser.dart';
 import 'package:flutter/material.dart';
 
 class DrawerWidget extends StatelessWidget {
@@ -20,18 +19,18 @@ class DrawerWidget extends StatelessWidget {
         ListTile(
           onTap: () {},
           leading: const Icon(Icons.privacy_tip),
-          title: Text('Privacy'),
+          title: const Text('Privacy'),
         ),
         ListTile(
           onTap: () {},
+          leading: const Icon(Icons.privacy_tip),
+          title: const Text('Privacy'),
+        ),
+        const ListTile(
           leading: Icon(Icons.privacy_tip),
           title: Text('Privacy'),
         ),
-        ListTile(
-          leading: Icon(Icons.privacy_tip),
-          title: Text('Privacy'),
-        ),
-        ListTile(
+        const ListTile(
           leading: Icon(Icons.privacy_tip),
           title: Text('Privacy'),
         ),
