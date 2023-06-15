@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/bloc/bottomnavbar/bottomnavbar_bloc.dart';
+import 'package:ecommerce_app/bloc/brands/brands_bloc.dart';
 import 'package:ecommerce_app/bloc/splashscreen/splashscreen_bloc.dart';
 import 'package:ecommerce_app/screens/splashscreen.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider<BottomnavbarBloc>(
           create: (context) => BottomnavbarBloc(),
+        ),
+        BlocProvider<BrandsBloc>(
+          create: (context) => BrandsBloc(),
         ),
       ],
       child: MaterialApp(

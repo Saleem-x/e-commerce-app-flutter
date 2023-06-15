@@ -15,7 +15,7 @@ class CatogoriesWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: InkWell(
             onTap: () async {
-              getbrands();
+              getbrands(context);
             },
             child: Container(
               height: 15,

@@ -1,5 +1,4 @@
 import 'package:ecommerce_app/bloc/bottomnavbar/bottomnavbar_bloc.dart';
-import 'package:ecommerce_app/controllers/bottomappbarcontroller.dart';
 import 'package:ecommerce_app/screens/account/accountscreen.dart';
 import 'package:ecommerce_app/screens/cart/cartscreen.dart';
 import 'package:ecommerce_app/screens/homescreen/homescreen.dart';
@@ -11,15 +10,11 @@ import 'package:zoom_tap_animation/zoom_tap_animation.dart';
 class BottomAppbarwidget extends StatelessWidget {
   const BottomAppbarwidget({super.key});
 
-  // final Maincontroller controller = Get.put(Maincontroller());
-
   @override
   Widget build(BuildContext context) {
     BlocProvider.of<BottomnavbarBloc>(context).add(Changepage(index: 0));
     PageController controller = PageController();
-    // List pages = [HomeScreen(), SearchPage(), Inputscreen()];
     return Scaffold(
-      // backgroundColor: Colors.cyan,
       extendBody: true,
       bottomNavigationBar: Container(
         decoration: const BoxDecoration(color: Colors.blue),
