@@ -1,6 +1,5 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({super.key});
@@ -9,43 +8,57 @@ class AccountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Column(children: [
-        Container(
-          width: size.width * double.infinity,
-          height: size.height * 0.4,
-          decoration: const BoxDecoration(color: Colors.blue),
-          child: Align(
-            alignment: Alignment.center,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CircleAvatar(
-                  radius: 60,
-                  child: ClipOval(
-                    child: SizedBox.fromSize(
-                        size: const Size.fromRadius(60),
-                        child: Image.asset(
-                          'assets/images/FILA Logo.jpg',
-                          fit: BoxFit.cover,
-                        )),
+      body: SafeArea(
+        child: Column(children: [
+          Stack(
+            children: [
+              Container(
+                height: size.height / 3,
+                width: size.width,
+                color: Colors.blue,
+                child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: size.height * 0.15,
+                        width: size.width / 3,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white,
+                            image: const DecorationImage(
+                                image: AssetImage(
+                                    'assets/images/The trick every Vans shopper needs to know.png'))),
+                      ),
+                      SizedBox(
+                        height: size.height * 0.03,
+                      ),
+                      const Text('username'),
+                      const Text('username@gmail.com')
+                    ]),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      CupertinoIcons.back,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  height: size.height * 0.02,
-                ),
-                const Text(
-                  'Username',
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
-                )
-              ],
-            ),
-          ),
-        ),
-        Expanded(child: ListView())
-      ]),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.edit,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          )
+        ]),
+      ),
     );
   }
 }

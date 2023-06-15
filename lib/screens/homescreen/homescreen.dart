@@ -3,7 +3,6 @@ import 'package:ecommerce_app/widgets/brands.dart';
 import 'package:ecommerce_app/widgets/catogarywidget.dart';
 import 'package:ecommerce_app/widgets/drawerwidget.dart';
 import 'package:ecommerce_app/widgets/offercorousal.dart';
-import 'package:ecommerce_app/widgets/shoeslistwidget.dart';
 import 'package:flutter/material.dart';
 
 import '../../widgets/customlisttile.dart';

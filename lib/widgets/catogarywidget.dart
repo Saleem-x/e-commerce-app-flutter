@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/api/functions/createuser.dart';
 import 'package:ecommerce_app/models/itemtypes.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class CatogoriesWidget extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.all(8.0),
           child: InkWell(
-            onTap: () {},
+            onTap: () async {},
             child: Container(
               height: 15,
               decoration: BoxDecoration(
